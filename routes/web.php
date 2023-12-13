@@ -23,3 +23,5 @@ Route::get('places', [PlacesController::class, 'index']);
 Route::post('Places', [PlacesController::class, 'store'])->name('storePlace');
 Route::get('place', [PlacesController::class, 'place']);
 Route::get('blog1', [PlacesController::class, 'blog1']);
+Route::get('placeTable', [PlacesController::class, 'placeTable']);
+Route::get('deletePlace/{id}',[PlacesController::class,'destroy'])->name('deletePlace');
